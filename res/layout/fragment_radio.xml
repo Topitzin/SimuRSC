@@ -1,0 +1,180 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackgroud"
+    tools:context="com.example.topitzin.simu.RadioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name_undeline"
+        android:textSize="55sp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@color/head"
+        android:textColor="@color/colorAppName"
+        android:id="@+id/editText2"
+        android:textAlignment="center"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:padding="10dp"
+        android:text="@string/radios"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/white_border_top"/>
+
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ip"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:background="@color/head"
+                    android:padding="10dp"
+                    android:textColor="@color/colorBackgroud"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/letras"
+                    android:id="@+id/Rx"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Tx"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:background="@color/head"
+                    android:textColor="@color/colorBackgroud"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/señal"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorNegro"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/estado"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:background="@color/head"
+                    android:textColor="@color/colorBackgroud"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tiempo"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorNegro"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/intesidad"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:background="@color/head"
+                    android:textColor="@color/colorBackgroud"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mac"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:textColor="@color/colorNegro"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            >
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu="@menu/navegacion_menu2"
+                android:id="@+id/navitationview"
+                app:itemIconTint="@color/colorPrimary"
+                app:itemTextColor="@color/colorBackgroud"
+                android:paddingTop="@dimen/activity_horizontal_margin"
+                android:background="@drawable/white_border_down"
+                >
+
+
+            </android.support.design.widget.BottomNavigationView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

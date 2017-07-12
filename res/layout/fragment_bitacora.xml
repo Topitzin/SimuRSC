@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.topitzin.simu.BitacoraFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre"
+            android:padding="10dp"
+            android:text="@string/bitacora"
+            android:textAlignment="center"
+
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="23.5sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/white_border_top"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/recyclerb"
+                    android:layout_margin="@dimen/activity_horizontal_margin"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border_top"
+            android:textColor="@color/colorNegro"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:id="@+id/search"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:hint="Buscar" />
+    </LinearLayout>
+
+
+</FrameLayout>

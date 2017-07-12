@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "58250722159",
+    "firebase_url": "https://simu-c185f.firebaseio.com",
+    "project_id": "simu-c185f",
+    "storage_bucket": "simu-c185f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58250722159:android:107c6d35230ebcf2",
+        "android_client_info": {
+          "package_name": "com.example.topitzin.simu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58250722159-2c9re623c4qr9k4akh5f55630bptisjh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.topitzin.simu",
+            "certificate_hash": "388bd4d38a33b960994ac59a7f6f8f946e240021"
+          }
+        },
+        {
+          "client_id": "58250722159-l16l43jfkb7fkgfefeke143djbsd5crr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCL9poBKdTmgvJF-UtxpJd1jhhUWaItzGs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58250722159-l16l43jfkb7fkgfefeke143djbsd5crr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

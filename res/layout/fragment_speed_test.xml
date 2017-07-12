@@ -1,0 +1,165 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.topitzin.simu.SpeedTestFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nombre"
+            android:padding="10dp"
+            android:text="@string/speed"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="23.5sp"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/white_border_top"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_height="match_parent">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:background="@drawable/white_border_around"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/letras"
+                        android:text="Ping" />
+
+                    <TextView
+                        android:id="@+id/txtping"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="@color/letras"
+                        android:text="..." />
+
+                </LinearLayout>
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_border_around"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/letras"
+                        android:text="Bajada" />
+
+                    <TextView
+                        android:id="@+id/txtbajada"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="@color/letras"
+                        android:text="..." />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_border_around"
+                    android:padding="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal" >
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="20sp"
+                        android:textColor="@color/letras"
+                        android:text="Subida" />
+
+                    <TextView
+                        android:id="@+id/txtsubida"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="@color/letras"
+                        android:text="..." />
+
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border_top"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:padding="@dimen/activity_vertical_margin"
+            android:id="@+id/btn_graficaBjada"
+            android:text="@string/graficab"/>
+
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@drawable/white_border_top"
+               android:layout_centerVertical="true"
+               android:layout_margin="@dimen/activity_vertical_margin"
+               android:padding="@dimen/activity_vertical_margin"
+               android:id="@+id/btn_grafica"
+               android:text="@string/grafica"/>
+    </LinearLayout>
+
+</FrameLayout>
+

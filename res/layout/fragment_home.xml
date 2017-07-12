@@ -1,0 +1,268 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.topitzin.simu.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_main"
+        android:background="@color/colorBackgroud"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="com.example.topitzin.simu.MainActivity"
+        tools:showIn="@layout/app_bar_main">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:id="@+id/uno"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name_undeline"
+                    android:textSize="0sp"
+                    android:layout_below="@id/uno"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/letras"
+                    android:id="@+id/editText2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nombre"
+                    android:layout_below="@id/editText2"
+                    android:padding="10dp"
+                    android:text="@string/radios"
+                    android:textAlignment="center"
+
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="23.5sp"
+                    android:textColor="@color/colorPrimary"
+                    android:background="@drawable/white_border_top"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:id="@+id/espace"
+                    android:layout_below="@id/nombre"
+                    android:layout_height="0dp" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/card1"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    app:cardBackgroundColor="@color/colorBackgroud"
+                    android:layout_below="@id/espace">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="80dp"
+                        android:id="@+id/imagen_single_post_circuito"
+                        android:src="@drawable/ic_menu_share"
+                        android:layout_margin="@dimen/activity_vertical_margin"
+                        android:scaleType="fitStart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:textSize="18sp"
+                            android:id="@+id/disp_num1"
+                            android:layout_toRightOf="@id/imagen_single_post_circuito"
+                            android:text="@string/DispositivosC"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/letras" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="18sp"
+                            android:id="@+id/disp_num"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:layout_toRightOf="@id/imagen_single_post_circuito"
+                            android:layout_below="@id/disp_num1"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/letras" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorBackgroud"
+                    android:id="@+id/card2"
+                    app:cardCornerRadius="20dp"
+                    android:layout_margin="@dimen/activity_vertical_margin"
+                    android:layout_below="@id/card1">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/imgdisconnect"
+                            android:src="@drawable/ic_error_outline_black_24dp"
+                            android:layout_margin="@dimen/activity_vertical_margin"
+                            android:scaleType="fitStart" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:textSize="18sp"
+                            android:id="@+id/disp_last1"
+                            android:layout_toRightOf="@id/imgdisconnect"
+                            android:text="@string/DispositivosL"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/letras" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="18sp"
+                            android:id="@+id/disp_num3"
+                            android:paddingTop="@dimen/activity_vertical_margin"
+                            android:layout_toRightOf="@id/imgdisconnect"
+                            android:layout_below="@id/disp_last1"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/letras" />
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:id="@+id/espace2"
+                    android:layout_below="@id/card2"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/Sistema"
+                    android:layout_below="@id/espace2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/txt_sistema"
+                            android:textColor="@color/colorNegro"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:text="@string/Sistema" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="20sp"
+                            android:id="@+id/txt_nitify"
+                            android:textColor="@color/colorNegro"
+                            android:gravity="center"
+                            android:text="@string/notificaciones" />
+                    </LinearLayout>
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+                            <android.support.v7.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorNegro"
+                                android:theme="@style/MySwitch"
+                                android:layout_gravity="center"
+                                android:id="@+id/sw_sistema"
+                                android:gravity="center"/>
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <android.support.v7.widget.SwitchCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorNegro"
+                                android:layout_gravity="center"
+                                android:theme="@style/MySwitch"
+
+                                android:id="@+id/sw_notify"
+                                android:gravity="center"/>
+                        </FrameLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="match_parent"
+                    android:id="@+id/espace3"
+                    android:layout_below="@id/Sistema"
+                    android:layout_height="10dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/empresa"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textSize="30sp"
+                    android:layout_below="@id/espace3"
+                    android:textColor="@color/colorEmpresa"
+                    android:text="@string/empresa"/>
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
